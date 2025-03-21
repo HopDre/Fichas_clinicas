@@ -195,3 +195,14 @@ const paises = [
         complicaciones.disabled = !complicacionesSi.checked;
       });
     });
+
+    // Capturar los elementos
+    const lactanciaSi = document.getElementById("lactancia_si");
+    const lactancia = document.getElementById("lactancia");
+  
+    // Detectar cambio en los radio buttons
+    document.querySelectorAll('input[name="opcion"]').forEach(radio => {
+      radio.addEventListener("change", function() {
+        lactancia.disabled = !lactanciaSi.checked;
+      });
+    });

@@ -429,13 +429,13 @@
           name="peso"
           placeholder="Peso(kgs)"
         />
+        <input
+        type="number"
+        id="talla"
+        name="talla"
+        placeholder="Talla(cms)"
+      />
       </div>
-      <input
-      type="number"
-      id="talla"
-      name="talla"
-      placeholder="Talla(cms)"
-    />
         <input
         type="text"
         id="apgar"
@@ -443,6 +443,110 @@
         placeholder="APGAR"
       />
 
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">A. Postnatales:</label>
+        <input
+          type="text"
+          id="a_postnatales"
+          name="a_postnatales"
+          placeholder="Detalles A. Postnatales"
+        />
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcion">¿Lactancia materna?:</label>
+        <div class="radio_selections_title">
+            <label><input type="radio" name="opcion" value="no" /> No</label>
+            <label
+              ><input type="radio" name="opcion" value="si" id="lactancia_si" />
+              Si</label
+            >
+             <input
+        type="text"
+        id="lactancia"
+        name="lactancia"
+        placeholder="¿Hasta que edad?"
+        disabled
+      />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Desarrollo psicomotor:</label>
+          <label class="titulo_radio" for="opcion">Control cefálico:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Sedestación:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Gateo:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Marcha independiente:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Control de esfínter diurno:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Control de esfínter nocturno:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Vacunas:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si_no" />
+                Si, pero no todas</label
+              >
+              <label><input type="radio" name="opcion" value="si" /> Si, al día</label>
+            </div>
+          </div>
       </div>
     </form>
     <script src="/styles/script.js"></script>

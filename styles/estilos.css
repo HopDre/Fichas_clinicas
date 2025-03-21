@@ -67,7 +67,6 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 30%;
 }
 .for_selections input {
   margin-top: 0;
@@ -82,6 +81,9 @@ select {
 .row_dif{
   align-items: flex-start ;
 }
-#cantidad_hijos, #edad_cirugia, #complicaciones{
+#cantidad_hijos, #edad_cirugia, #complicaciones, #lactancia{
   margin: 0;
+}
+#talla{
+  margin-top: 10px;
 }
