@@ -548,6 +548,243 @@
             </div>
           </div>
       </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Lenguaje:</label>
+          <label class="titulo_radio" for="opcion">Balbuceo:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Jerga:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Primeras palabras:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Primeras frases:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">¿Recibe ayuda para expresarse?:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">¿Los demás entienden lo que dice?:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si"  />
+                Si</label
+              >
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          id="acompresion"
+          name="compresion"
+          placeholder="Compresión y expresión actual"
+        />
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">Juego:</label>
+        <input
+          type="text"
+          id="juego"
+          name="juego"
+          placeholder="¿A que juega?"
+        />
+      </div>
+      <input
+      type="text"
+      id="tiempo_juego"
+      name="tiempo_juego"
+      placeholder="Tiempos de juego"
+    />
+      <input
+      type="text"
+      id="tipo_juguetes"
+      name="tipo_juguetes"
+      placeholder="Tipos de juguetes"
+    />
+    <div class="radio_selections">
+      <label class="titulo_radio" for="opcion">¿Juega solo o acompañado?:</label>
+      <div class="radio_selections_title">
+          <label><input type="radio" name="opcion" value="solo" /> Solo</label>
+          <label
+            ><input type="radio" name="opcion" value="acompañado" />
+            Acompañado</label
+          >
+        </div>
+      </div>
+  <div class="radio_selections">
+    <label class="titulo_radio" for="opcion">¿Juega con su hijo/a?:</label>
+    <div class="radio_selections_title">
+        <label><input type="radio" name="opcion" value="solo" /> No</label>
+        <label
+          ><input type="radio" name="opcion" value="acompañado" id="siJuega" />
+          Si</label
+        >
+         <input
+    type="text"
+    id="juega_con"
+    name="juega_con"
+    placeholder="¿Lo disfruta?"
+    disabled
+  />
+      </div>
+    </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+        <label for="alimentacion">Alimentación y deglución:</label>
+        <textarea id="alimentacion" name="alimentacion" rows="4" cols="200" placeholder="Forma de alimentación, tipo de alimentos, tiempo que dura proceso, selectividad alimentaria, dificultades que notan si hay."></textarea>
+      </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+        <label for="habitos">Malos hábitos orales:</label>
+        <textarea id="habitos" name="habitos" rows="4" cols="200" placeholder="Succión digital, chupete, mamadera, onicofagia, PICA, otros."></textarea>
+      </div>
+      </div>
+      <div class="row row_dif">
+        <label for="">Habilidades de la vida diaria</label>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcion">¿Es su hijo(a) independiente  en actividades de la vida diaria (bañarse, comer, lavado dientes, peinado, etc.)?</label>
+        <div class="radio_selections_title">
+            <label><input type="radio" name="opcion" value="no" /> No</label>
+            <label
+              ><input type="radio" name="opcion" value="si"  />
+              Si</label
+            >
+          </div>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="ayuda" name="ayuda" rows="4" cols="200" placeholder="En caso de requerir ayuda cómo está (normal para la edad, usa objetos con sentido, pero no sabe finalizar, intenta ayudar, se le debe hacer todo."></textarea>
+        </div>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="rutina" name="rutina" rows="4" cols="200" placeholder="Describa la rutina de su hijo(a) un día común (orden de la rutina, ojo en horas de sueño)."></textarea>
+        </div>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="habitos_sueño" name="habitos_sueño" rows="4" cols="200" placeholder="Hábitos de sueño: (cantidad de horas, despertares, insomnio etc.)"></textarea>
+        </div>
+        </div>
+        <div class="row row_dif">
+          <label for="">Relación con pares y adultos</label>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="relacion" name="relacion" rows="4" cols="200" placeholder="¿Cómo se relaciona con adultos y pares que conoce? (familia, jardín)."></textarea>
+        </div>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="relacion_extraños" name="relacion_extraños" rows="4" cols="200" placeholder="¿Cómo se relaciona con pares y adultos que no conoce? (plaza, lugares nuevos, tiendas, etc.)"></textarea>
+        </div>
+        </div>
+        <div class="row row_dif">
+          <label for="">Conductas disruptivas</label>
+        </div>
+        <div class="row">
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcion">¿Presenta conductas disruptivas difíciles de manejar?:</label>
+        <div class="radio_selections_title">
+            <label><input type="radio" name="opcion" value="si" /> Si</label>
+            <label
+              ><input type="radio" name="opcion" value="no" />
+              No</label
+            >
+          </div>
+        </div>
+    <div class="radio_selections">
+      <label class="titulo_radio" for="opcion">¿Estas conductas interfieren en sus actividades de la vida diaria?:</label>
+      <div class="radio_selections_title">
+          <label><input type="radio" name="opcion" value="solo" /> No</label>
+          <label
+            ><input type="radio" name="opcion" value="acompañado" id="siJuega" />
+            Si</label
+          >
+        </div>
+      </div>
+        </div>
+        <div class="row row_dif">
+          <div class="for_selections">
+          <textarea id="manejo" name="manejo" rows="4" cols="200" placeholder="¿Cómo lo están manejando?"></textarea>
+        </div>
+        </div>
+        <label for="pais">Patrones e intereses restrictivos y estereotipos:</label>
+        <div class="row">
+          <div class="radio_selections">
+            <label class="titulo_radio" for="opcion">¿Presenta alguno?:</label>
+            <div class="radio_selections_title">
+                <label><input type="radio" name="opcion" value="solo" /> No</label>
+                <label
+                  ><input type="radio" name="opcion" value="acompañado" id="siPresenta" />
+                  Si</label
+                >
+                 <input
+            type="text"
+            id="estereotipos"
+            name="estereotipos"
+            placeholder="¿Cuales?"
+            disabled
+          />
+              </div>
+            </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcion">¿Interfieren con actividades de la vida diaria?:</label>
+        <div class="radio_selections_title">
+            <label><input type="radio" name="opcion" value="no" /> No</label>
+            <label
+              ><input type="radio" name="opcion" value="si" />
+              Si</label
+            >
+          </div>
+        </div>
+        </div>
+        <div class="btn_envio">
+          <button class="btn_enviar">Guardar datos</button>
+        </div>
     </form>
     <script src="/styles/script.js"></script>
     

@@ -206,3 +206,31 @@ const paises = [
         lactancia.disabled = !lactanciaSi.checked;
       });
     });
+
+
+
+
+
+    // Capturar los elementos
+    const siJuega = document.getElementById("siJuega");
+    const juegaCon = document.getElementById("juega_con");
+  
+    // Detectar cambio en los radio buttons
+    document.querySelectorAll('input[name="opcion"]').forEach(radio => {
+      radio.addEventListener("change", function() {
+        juegaCon.disabled = !siJuega.checked;
+      });
+    });
+
+
+
+    // Capturar los elementos
+    const siPresenta = document.getElementById("siPresenta");
+    const estereotipos = document.getElementById("estereotipos");
+  
+    // Detectar cambio en los radio buttons
+    document.querySelectorAll('input[name="opcion"]').forEach(radio => {
+      radio.addEventListener("change", function() {
+        estereotipos.disabled = !siPresenta.checked;
+      });
+    });

@@ -21,6 +21,12 @@ form {
 label {
   font-weight: bold;
 }
+textarea{
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: rgb(194, 194, 194) -3px 3px 5px;
+}
 .row {
   display: flex;
   gap: 20px;
@@ -81,9 +87,31 @@ select {
 .row_dif{
   align-items: flex-start ;
 }
-#cantidad_hijos, #edad_cirugia, #complicaciones, #lactancia{
+.row_dif textarea{
+  width: 100%;
+}
+#cantidad_hijos, #edad_cirugia, #complicaciones, #lactancia, #juega_con, #estereotipos{
   margin: 0;
 }
 #talla{
   margin-top: 10px;
+}
+.btn_enviar{
+  background-color: #22ae8a;
+  border: none;
+  width: 200px;
+  padding: 10px;
+  color: #ffff;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn_enviar:hover{
+  background-color: #F08037;
+}
+.btn_envio{
+  display: flex;
+  justify-content: flex-end;
 }
