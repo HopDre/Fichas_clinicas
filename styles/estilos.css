@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #585858;
+}
+input {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px #a1a1a1 solid;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: rgb(194, 194, 194) -3px 3px 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.row input {
+  flex: 1;
+  padding: 8px;
+}
+#formulario_ficha_clinica {
+  padding: 20px 40px;
+}
+.titulos_fondo {
+  background-color: #22ae8a;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 40px;
+}
+.titulos_fondo h3 {
+  color: #ffff;
+}
+.radio_selections input[type="radio"] {
+  padding: 0;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+}
+.radio_selections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.radio_selections_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.radio_selections_title label {
+  margin-right: 40px;
+}
+.for_selections {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30%;
+}
+.for_selections input {
+  margin-top: 0;
+}
+select {
+  padding: 7px;
+  border: 1px #a1a1a1 solid;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: rgb(194, 194, 194) -3px 3px 5px;
+}
+.row_dif{
+  align-items: flex-start ;
+}
+#cantidad_hijos, #edad_cirugia, #complicaciones{
+  margin: 0;
+}

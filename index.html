@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha clínica</title>
+    <link rel="stylesheet" href="/styles/estilos.css" type="text/css" />
+  </head>
+  <body>
+    <form id="formulario_ficha_clinica" action="">
+      <h3>Ficha clínica</h3>
+      <div class="titulos_fondo"><h3>Datos personales</h3></div>
+      <div class="row">
+        <input
+          type="text"
+          id="nombres"
+          name="nombre"
+          placeholder="Nombres"
+          readonly
+        />
+        <input
+          type="text"
+          id="apellido_paterno"
+          name="apellido_paterno"
+          placeholder="Apellido paterno"
+          readonly
+        />
+        <input
+          type="text"
+          id="apellido_materno"
+          name="apellido_materno"
+          placeholder="Apellido materno"
+          readonly
+        />
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+            <label class="titulo_radio" for="opcion">Documento:</label>
+            <div class="radio_selections_title">
+                <label><input type="radio" name="opcion" value="rut" /> RUT</label>
+                <label
+                  ><input type="radio" name="opcion" value="pasaporte" />
+                  Pasaporte</label
+                >
+                <label><input type="radio" name="opcion" value="otro" /> Otro</label>
+              </div>
+            </div>
+         
+        <input
+          type="text"
+          id="numero_documento"
+          name="anumero_documento"
+          placeholder="N° de documento"
+          readonly
+        />
+        <div class="for_selections">
+            <label for="pais">Selecciona tu país:</label>
+            <select id="pais"></select>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="for_selections">
+            <label for="dia">Día:</label>
+            <select id="dia"></select>
+        </div>
+        <div class="for_selections">
+            <label for="mes">Mes:</label>
+            <select id="mes"></select>
+        </div>
+        <div class="for_selections">
+            <label for="anio">Año:</label>
+            <select id="anio"></select>
+        </div>
+        <div class="for_selections">
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" readonly>
+        </div>
+        <div class="for_selections">
+          <label for="pais">Género:</label>
+          <select id="pais">
+            <option value="">Seleccione género</option>
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+            <option value="">Otro</option>
+          </select>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcion">Lateralidad:</label>
+        <div class="radio_selections_title">
+            <label><input type="radio" name="opcion" value="rut" /> Diestro</label>
+            <label
+              ><input type="radio" name="opcion" value="pasaporte" />
+              Zurdo</label
+            >
+            <label><input type="radio" name="opcion" value="otro" /> Ambidiestro</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">Estado civil:</label>
+          <select id="pais">
+            <option value="">Seleccione estado civil</option>
+            <option value="">Soltero</option>
+            <option value="">Casado</option>
+            <option value="">Conviviente civil</option>
+            <option value="">Separado judicialmente</option>
+            <option value="">Divorciado</option>
+            <option value="">Viudo</option>
+          </select>
+      </div>
+        <input
+          type="text"
+          id="correo"
+          name="correo"
+          placeholder="Correo electrónico"
+          readonly
+        />
+        <input
+          type="number"
+          id="numero_fijo"
+          name="numero_fijo"
+          placeholder="Teléfono fijo"
+          readonly
+        />
+        <input
+          type="number"
+          id="numero_movil"
+          name="numero_movil"
+          placeholder="Teléfono móvil"
+          readonly
+        />
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="region">Región:</label>
+          <select id="region">
+            <option value="">Selecciona una región</option>
+          </select>
+        </div>
+        <div class="for_selections">
+          <label for="comuna">Comuna:</label>
+          <select id="comuna" disabled>
+            <option value="">Selecciona una comuna</option>
+          </select>
+        </div>
+        <input
+          type="text"
+          id="direccion"
+          name="direccion"
+          placeholder="Dirección"
+          readonly
+        />
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">Escolaridad actual o nivel alcanzado:</label>
+          <select id="pais">
+            <option value="">Seleccione escolaridad</option>
+            <option value="">Enseñanza básica incompleta</option>
+            <option value="">Enseñanza básica completa</option>
+            <option value="">Enseñanza media incompleta</option>
+            <option value="">Enseñanza media completa</option>
+            <option value="">Enseñanza superior incompleta (CFT, IP, Universidad)</option>
+            <option value="">Enseñanza superior completa (CFT, IP, Universidad)</option>
+          </select>
+      </div>
+        <input
+          type="text"
+          id="institucion"
+          name="institucion"
+          placeholder="Institución"
+          readonly
+        />
+        <div class="for_selections">
+          <label for="pais">Previsión:</label>
+          <select id="pais">
+            <option value="">Seleccione previsión</option>
+            <option value="">FONASA</option>
+            <option value="">ISAPRE</option>
+            <option value="">Particular</option>
+          </select>
+      </div>
+      </div>  
+      <div class="row row_dif">
+        <div class="for_selections">
+        <label for="motivos">Motivos de consulta:</label>
+        <textarea id="motivos" name="motivos" rows="4" cols="50"></textarea>
+      </div>
+        <div class="conjunto_datos">
+          <input
+          type="text"
+          id="derviacion"
+          name="derivacion"
+          placeholder="Derivado desde"
+          readonly
+        />
+        </div>
+        <div class="for_selections">
+          <label for="diaDos">Día:</label>
+          <select id="diaDos"></select>
+      </div>
+      <div class="for_selections">
+          <label for="mesDos">Mes:</label>
+          <select id="mesDos"></select>
+      </div>
+      <div class="for_selections">
+          <label for="anioDos">Año:</label>
+          <select id="anioDos"></select>
+      </div>
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">Familiar responsable:</label>
+        <input
+          type="text"
+          id="nombres_familiar"
+          name="nombre_familiar"
+          placeholder="Nombre completo"
+          readonly
+        />
+      </div>
+        <input
+          type="text"
+          id="parentesco"
+          name="parentesco"
+          placeholder="Parentesco"
+          readonly
+        />
+      </div> 
+      <!-------------------------------------------------- Sección dos ----------------------------------------->
+      <div class="titulos_fondo"><h3>Antecedentes generales y mórbidos de salud</h3></div>
+      <div class="row">
+        <input
+          type="text"
+          id="convive"
+          name="convive"
+          placeholder="Con quien vive"
+        />
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">¿Tiene hijos?:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" id="radioSi" />
+                Si</label
+              >
+               <input
+          type="number"
+          id="cantidad_hijos"
+          name="cantidad_hijos"
+          placeholder="¿Cuantos?"
+          disabled
+        />
+            </div>
+          </div>
+          <div class="radio_selections">
+            <label class="titulo_radio" for="opcion">Relación familiar:</label>
+            <div class="radio_selections_title">
+                <label><input type="radio" name="opcion" value="buena" /> Buena</label>
+                <label
+                  ><input type="radio" name="opcion" value="mala" />
+                  Mala</label
+                >
+                <label
+                  ><input type="radio" name="opcion" value="no_familiares" />
+                  No posee familiares</label
+                >
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          id="actividad"
+          name="actividad"
+          placeholder="Actividad y participación social"  
+        />
+        <input
+        type="text"
+        id="intereses"
+        name="intereses"
+        placeholder="Intereses / hobbies"
+      />
+        <input
+          type="text"
+          id="diagnostico"
+          name="diagnostico"
+          placeholder="Diagnostico médico y/o otros profesionales"
+        />
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          id="enfermedades"
+          name="enfermedades"
+          placeholder="Enfermedades crónicas"  
+        />
+        <input
+        type="text"
+        id="farmacos"
+        name="farmacos"
+        placeholder="Fármacos que consume"
+      />
+        <input
+          type="text"
+          id="especialistas"
+          name="especialistas"
+          placeholder="Especialistas a los que asiste"
+        />
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Hospitalizaciones o cirugias:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" id="siRadio" />
+                Si</label
+              >
+               <input
+          type="number"
+          id="edad_cirugia"
+          name="edad_cirugia"
+          placeholder="¿A que edad?"
+          disabled
+        />
+            </div>
+          </div>
+        <input
+          type="text"
+          id="ayudas"
+          name="ayudas"
+          placeholder="Uso de ayudas técnicas"
+        />
+        <input
+        type="text"
+        id="alergias"
+        name="alergias"
+        placeholder="Alergias (medicamentos, alimentos)"
+      />
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Consume:</label>
+          <div class="radio_selections_title">
+            <label>
+              <input type="checkbox" name="opcion" value="cigarillos"> Cigarrillos
+            </label><br>
+            
+            <label>
+              <input type="checkbox" name="opcion" value="alcohol"> Alcohol
+            </label><br>
+            
+            <label>
+              <input type="checkbox" name="opcion" value="marihuana"> Marihuana
+            </label><br>
+            
+            <label>
+              <input type="checkbox" name="opcion" value="otras_drogas"> Otras drogas
+            </label><br>
+            </div>
+          </div>     
+        <input
+        type="text"
+        id="caidas"
+        name="caidas"
+        placeholder="Caídas"
+      />
+      </div>
+      <!-------------------------------------------------- Sección tres ----------------------------------------->
+      <div class="titulos_fondo"><h3>Antecedentes del desarrollo</h3></div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Embarazo controlado:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Embarazo deseado:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">Ingesta de alcohol, cigarrillos, drogas:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" />
+                Si</label
+              >
+            </div>
+          </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcion">¿Embarazo con complicaciones?:</label>
+          <div class="radio_selections_title">
+              <label><input type="radio" name="opcion" value="no" /> No</label>
+              <label
+                ><input type="radio" name="opcion" value="si" id="complicaciones_si" />
+                Si</label
+              >
+               <input
+          type="text"
+          id="complicaciones"
+          name="complicacions"
+          placeholder="¿Cuales?"
+          disabled
+        />
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="for_selections">
+          <label for="pais">A. Perinatales:</label>
+        <input
+          type="number"
+          id="peso"
+          name="peso"
+          placeholder="Peso(kgs)"
+        />
+      </div>
+      <input
+      type="number"
+      id="talla"
+      name="talla"
+      placeholder="Talla(cms)"
+    />
+        <input
+        type="text"
+        id="apgar"
+        name="apgar"
+        placeholder="APGAR"
+      />
+
+      </div>
+    </form>
+    <script src="/styles/script.js"></script>
+    
+  </body>
+</html>
